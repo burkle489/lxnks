@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGoogle } from "@fortawesome/free-brands-svg-icons"
 import { FC } from "react"
 import { ILoginWithGoogleProps } from "./LoginWithGoogle.types"
-import { signIn } from "next-auth/react"
+import { signIn, useSession } from "next-auth/react"
 
 const LoginWithGoogle: FC<ILoginWithGoogleProps> = () => {
   return (

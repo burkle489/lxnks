@@ -1,6 +1,4 @@
-import Header from "@/components/Header"
-import Image from "next/image"
-import Link from "next/link"
+import HeroForm from "@/components/Forms/HeroForm"
 
 export default function Home() {
   return (
@@ -15,13 +13,7 @@ export default function Home() {
             <span className="font-bold">specifically.</span>
           </h2>
         </div>
-        <form className="inline-flex items-center shadow-gray-700/20 shadow-lg">
-          <span className="bg-white py-3 pl-4">lxnks.to/</span>
-          <input type="text" className=" py-3" placeholder="username" />
-          <button type="submit" className="bg-blue-500 text-white py-3 px-4">
-            Join for free
-          </button>
-        </form>
+        <HeroForm />
       </section>
     </main>
   )
